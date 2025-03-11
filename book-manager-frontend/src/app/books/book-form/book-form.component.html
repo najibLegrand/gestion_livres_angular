@@ -1,0 +1,14 @@
+<!-- src/app/books/book-form/book-form.component.html -->
+<h2>{{ editing ? 'Modifier un livre' : 'Ajouter un nouveau livre' }}</h2>
+
+<form #bookForm="ngForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label>Titre:</label>
+    <input type="text" name="title" [(ngModel)]="book.title" required>
+  </div>
+  <div>
+    <label>Auteur:</label>
+    <input type="text" name="author" [(ngModel)]="book.author" required>
+  </div>
+  <button type="submit">{{ editing ? 'Enregistrer' : 'Créer' }}</button>
+</form>
