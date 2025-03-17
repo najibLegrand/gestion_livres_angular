@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="187187500641108332" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ bookId ? &apos;Modifier le livre&apos; : &apos;Ajouter un nouveau livre&apos; }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/books/book-form/book-form.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="titreLivre" datatype="html">
+        <source>Titre:</source>
+        <target>Title:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/books/book-form/book-form.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="titreRequis" datatype="html">
+        <source> Le titre est requis. </source>
+        <target>Title is required.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/books/book-form/book-form.component.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="auteur" datatype="html">
+        <source>Auteur:</source>
+        <target>Author:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/books/book-form/book-form.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="auteurRequis" datatype="html">
+        <source> L&apos;auteur est requis. </source>
+        <target>Author is required:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/books/book-form/book-form.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="datePublication" datatype="html">
+        <source>Date de publication:</source>
+        <target>Publish date:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/books/book-form/book-form.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dateRequis" datatype="html">
+        <source> La date de publication est requise. </source>
+        <target> Publish date is required:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/books/book-form/book-form.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="description" datatype="html">
+        <source>Description:</source>
+        <target>Description:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/books/book-form/book-form.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7708270344948043036" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ bookId ? &apos;Enregistrer&apos; : &apos;Créer&apos; }}"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/books/book-form/book-form.component.html</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="listeLivres" datatype="html">
+         <source>Liste des Livres</source>
+        <target>Book list:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/books/book-list/book-list.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ajouLivre" datatype="html">
+        <source>Ajouter un nouveau livre</source>
+        <target>Add a new book:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/books/book-list/book-list.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btSupprimer" datatype="html">
+        <source>Supprimer</source>
+        <target>Delete:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/books/book-list/book-list.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btModifier" datatype="html">
+        <source>Modifier</source>
+        <target>Modify:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/books/book-list/book-list.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,14 +1,37 @@
 <!-- src/app/books/book-form/book-form.component.html -->
-<h2>{{ editing ? 'Modifier un livre' : 'Ajouter un nouveau livre' }}</h2>
+<h2 i18n>{{ bookId ? 'Modifier le livre' : 'Ajouter un nouveau livre' }}</h2>
 
-<form #bookForm="ngForm" (ngSubmit)="onSubmit()">
+<form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
   <div>
-    <label>Titre:</label>
-    <input type="text" name="title" [(ngModel)]="book.title" required>
+    <label for="title" i18n="@@titreLivre">Titre:</label>
+    <input id="title" type="text" formControlName="title">
+    <div *ngIf="bookForm.get('title')?.invalid && bookForm.get('title')?.touched" i18n="@@titreRequis">
+      Le titre est requis.
+    </div>
   </div>
+
   <div>
-    <label>Auteur:</label>
-    <input type="text" name="author" [(ngModel)]="book.author" required>
+    <label for="author" i18n="@@auteur">Auteur:</label>
+    <input id="author" type="text" formControlName="author">
+    <div *ngIf="bookForm.get('author')?.invalid && bookForm.get('author')?.touched" i18n="@@auteurRequis">
+      L'auteur est requis.
+    </div>
   </div>
-  <button type="submit">{{ editing ? 'Enregistrer' : 'Créer' }}</button>
+
+  <div>
+    <label for="publishedDate" i18n="@@datePublication">Date de publication:</label>
+    <input id="publishedDate" type="date" formControlName="publishedDate">
+    <div *ngIf="bookForm.get('publishedDate')?.invalid && bookForm.get('publishedDate')?.touched" i18n="@@dateRequis">
+      La date de publication est requise.
+    </div>
+  </div>
+
+  <div>
+    <label for="description" i18n="@@description">Description:</label>
+    <textarea id="description" formControlName="description"></textarea>
+  </div>
+
+  <button type="submit" [disabled]="bookForm.invalid" i18n>
+    {{ bookId ? 'Enregistrer' : 'Créer' }}
+  </button>
 </form>

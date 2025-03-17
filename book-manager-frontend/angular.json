@@ -5,6 +5,12 @@
   "projects": {
     "book-manager-frontend": {
       "projectType": "application",
+      "i18n": {
+            "sourceLocale": "fr",
+            "locales": {
+              "en": "messages.en.xlf"
+            }
+            },
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
@@ -17,6 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            
             "outputPath": "dist/book-manager-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -31,6 +38,7 @@
               "src/styles.scss"
             ],
             "scripts": []
+          
           },
           "configurations": {
             "production": {

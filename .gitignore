@@ -1,0 +1,11 @@
+.idea/.gitignore
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/gestion_livres_angular.iml
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+book-manager-frontend/.vscode/extensions.json
+book-manager-frontend/.vscode/launch.json
+book-manager-frontend/.vscode/tasks.json
